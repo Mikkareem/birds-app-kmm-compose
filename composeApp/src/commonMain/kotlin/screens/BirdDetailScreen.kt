@@ -12,6 +12,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
+import io.kamel.image.KamelImage
+import io.kamel.image.asyncPainterResource
 import screenevents.BirdDetailsScreenEvent
 import screens.components.NetworkAwareContainer
 import viewmodels.BirdDetailComponent
@@ -36,12 +38,18 @@ fun BirdDetailScreen(
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                if(bird.images.isNotEmpty()) {
+                    KamelImage(
+                        resource = asyncPainterResource(data = bird.images[0]),
+                        contentDescription = null,
+//                        modifier = Modifier.size(100.dp)
+                    )
+                }
                 Text("Bird Name: ${bird.name}")
                 Button(onClick = { component.onEvent(BirdDetailsScreenEvent.GoBack) }) {
                     Text("Go Back")
                 }
             }
         }
-
     }
 }

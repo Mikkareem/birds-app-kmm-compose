@@ -56,6 +56,8 @@ kotlin {
             implementation(libs.ktor.client.contentNegotiation)
             implementation(libs.ktor.jsonSerialization)
             api(libs.koin.core)
+
+            implementation(libs.kamel.image)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
