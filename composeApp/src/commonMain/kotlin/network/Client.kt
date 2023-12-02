@@ -9,7 +9,7 @@ import kotlinx.serialization.json.Json
 
 internal fun provideHttpClient(): HttpClient = HttpClient {
     defaultRequest {
-        headers.append("api-key", ApiKeyConfig.WeatherApiKey)
+        headers.append("api-key", ApiKeyConfig.NuthatchApiKey)
     }
 
     install(ContentNegotiation) {

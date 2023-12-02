@@ -110,8 +110,8 @@ buildkonfig {
     defaultConfigs {
         buildConfigField(
             STRING,
-            "WeatherApiKey",
-            gradleLocalProperties(project.rootDir).getProperty("WEATHER_API_KEY")
+            "NuthatchApiKey",
+            gradleLocalProperties(project.rootDir).getProperty("NUTHATCH_API_KEY")
         )
     }
 }
