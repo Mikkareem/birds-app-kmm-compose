@@ -1,6 +1,6 @@
 # Birds Info App 
 
-Compose Multiplatform Application targeting Android and iOS.
+**Compose Multiplatform Application targeting Android and iOS.**
 
 ## Technologies:
 - Kotlin
