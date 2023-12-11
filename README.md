@@ -12,7 +12,7 @@ Compose Multiplatform Application targeting Android and iOS.
 
 ### Data Provider - Nuthatch Api  
 
-## ScreenShots
+## ScreenShots (Android & iOS)
 
 **Android**  
 
